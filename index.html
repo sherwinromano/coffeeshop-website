@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <title>Coffee Express</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cc0a4b5382.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="#" id="title"><h1>Coffee<span>Express</span></h1></a>
+        <ul>
+            <li><a href="#about-page">About</a></li>
+            <li><a href="#product-page">Coffees</a></li>
+            <li><a href="#review-page">Testimonials</a></li>
+            <li><a href="#contact-page">Contact</a></li>
+        </ul>
+        <button class="loginBtn">SIGN IN</button>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+    </div>
+    <div id="landing-page">
+        <div class="landing">
+            <div class="title">
+                <h1>Life is better with coffee</h1>
+                <p>Start your day with a hot cup of happiness.</p>
+            </div>
+            <img src="./images/coffee.png" alt="Coffee picture">
+        </div>
+        <div class="sidebar">
+            <div class="content">
+                <i class="fa-solid fa-xmark closeBtn"></i>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="email" autocomplete="off">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <button onclick="alert('Under development, coming soon')">Log In</button>
+                </form>
+                <p class="note">Don’t have an account? <a href="">Sign-up</a></p>
+                <div class="socials">
+                    <button class="google" onclick="alert('Under development, coming soon')">
+                        <i class="fa-brands fa-google"></i>
+                        <p>Continue with Google</p>
+                    </button>
+                    <button class="facebook" onclick="alert('Under development, coming soon')">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Continue with Facebook</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-mobile">
+            <div class="wrapper">
+                <i class="fa-solid fa-xmark" id="toggle-close"></i>
+                <ul>
+                    <li class="link"><a href="#about-page">About</a></li>
+                    <li class="link"><a href="#product-page">Coffees</a></li>
+                    <li class="link"><a href="#review-page">Testimonials</a></li>
+                    <li class="link"><a href="#contact-page">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="about-page">
+        <div class="information">
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit illum doloremque 
+                   nemo ab modi delectus atque, consequatur libero vitae nam nesciunt asperiores placeat 
+                   deserunt itaque adipisci nulla? Dolor, eveniet et. Officia earum totam, obcaecati 
+                   incidunt omnis provident iusto autem ab vitae veritatis ratione voluptate deserunt 
+                   quidem repellat aut suscipit culpa?</p>
+            </div>
+            <img src="./images/coffeeshop.webp" alt="Coffee shop picture" height="300px">
+        </div>
+    </div>
+    <div id="product-page">
+        <div class="product-container">
+            <div class="second-title">
+                <h2>Our Coffees</h2>
+                <p>Our featured products</p>
+            </div>
+            <div class="items">
+                <div class="highlights">
+                    <div class="coffee">
+                        <img src="./images/macchiato.webp" alt="Macchiato coffee" height="200px" 
+                             width="200px">
+                        <h3>Macchiato</h3>
+                    </div>
+                    <div class="coffee">
+                        <img src="./images/cappuccino.webp" alt="Cappuccino coffee" height="200px"          
+                              width="200px">
+                        <h3>Cappuccino</h3>
+                    </div>
+                    <div class="coffee">
+                        <img src="./images/espresso.webp" alt="Espresso coffee" height="200px" width="200px">
+                        <h3>Espresso</h3>
+                    </div>
+                </div>
+                    <button id="order">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="review-page">
+        <div class="ratings-container">
+            <h2>Testimonials</h2>
+            <div class="rates">
+                <p class="note">What our customers say to our products</p>
+                <div class="card-section">
+                    <div class="cards">
+                        <div class="profile">
+                            <img src="images/profilepicture.jpg" alt="Customer profile photo">
+                            <div class="description">
+                                <h3>Jeff Bezos</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="cards">
+                        <div class="profile">
+                            <img src="images/profilepicture.jpg" alt="Customer profile photo">
+                            <div class="description">
+                                <h3>Mark Zuckerberg</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="cards">
+                        <div class="profile">
+                            <img src="images/profilepicture.jpg" alt="Customer profile photo">
+                            <div class="description">
+                                <h3>Bill Gates</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-page">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="socials">
+                    <div class="facebook social-section">
+                        <i class="fa-brands fa-facebook logo"></i>
+                        <p>Coffee Express</p>
+                    </div>
+                    <div class="instagram social-section">
+                        <i class="fa fa-brands fa-instagram logo"></i>
+                        <p>coffeeexpress</p>
+                    </div>
+                    <div class="twitter social-section">
+                        <i class="fa fa-brands fa-twitter logo"></i>
+                        <p>coffeeexpress</p>
+                    </div>
+                    <div class="google social-section">
+                        <i class="fa fa-brands fa-google logo"></i>
+                        <p>coffeeexpress@gmail.com</p>
+                    </div>
+                    <div class="hotline social-section">
+                        <i class="fa fa-solid fa-phone logo"></i>
+                        <div>
+                            <p>Mobile - 01234567890</p>
+                            <p>Landline - 1234 5678</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="feedback">
+                    <p>We want to hear your feedback</p>
+                    <textarea name="feedback" id="feedback" cols="75" rows="13"></textarea>
+                    <button type="submit" id="submit-feedback">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-page">
+        <div class="footer-container">
+            <h3>Coffee<span>Express</span> &copy; 2022</h3>
+            <p>Made by: Sherwin Romano</p>
+        </div>
+    </div>
+</body>
+</html>
