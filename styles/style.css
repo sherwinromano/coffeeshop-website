@@ -285,6 +285,7 @@
   color: white;
   height: auto;
   padding: 5% 8%;
+  position: relative;
 }
 #product-page .product-container {
   height: 100%;
@@ -295,6 +296,7 @@
   width: 50%;
   transform: translateX(50%);
   text-align: center;
+  z-index: 1;
 }
 #product-page .product-container .second-title h2 {
   font-size: 3rem;
@@ -312,6 +314,7 @@
   align-items: center;
   padding-top: 3rem;
   height: 100%;
+  z-index: 1;
 }
 #product-page .product-container .items .highlights {
   width: 100%;
@@ -364,6 +367,17 @@
 #product-page .product-container .items button:hover {
   transform: scale(1.3);
   transition: 0.3s;
+}
+
+#product-page::after {
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 50%;
+  background-color: #282828;
+  right: 0;
+  top: 18%;
+  border-radius: 10% 0 0 10%;
 }
 
 #review-page {
@@ -643,6 +657,9 @@
     padding: 0.8rem;
     transition: none;
   }
+  #product-page::after {
+    display: none;
+  }
   #review-page {
     padding: 50px 35px;
     height: auto;
@@ -724,10 +741,12 @@
     gap: 1rem;
   }
   #contact-page .contact-container .contact-content .feedback p {
+    padding-top: 1.3rem;
     font-size: 1.3rem;
   }
   #contact-page .contact-container .contact-content .feedback textarea {
     width: 100%;
+    height: 200px;
   }
   #contact-page .contact-container .contact-content .feedback button {
     font-size: 0.8rem;

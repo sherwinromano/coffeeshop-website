@@ -11,7 +11,7 @@ document.querySelector(".closeBtn").addEventListener('click', () => {
 });
 
 document.getElementById("order").addEventListener("click", function(){
-    alert("Under development");
+    alert("Coming soon :)");
 });
 
 document.getElementById("submit-feedback").addEventListener("click", function(){
@@ -22,7 +22,6 @@ document.getElementById("submit-feedback").addEventListener("click", function(){
         feedback.focus();
     } else {
         alert(`Your feedback: ${feedback.value}`);
-        alert("Thanks for your feedback");
         feedback.value = "";
         feedback.focus();
     }
