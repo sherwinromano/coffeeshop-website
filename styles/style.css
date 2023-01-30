@@ -315,25 +315,25 @@
 }
 #product-page .product-container .items .highlights {
   width: 100%;
-  padding-bottom: 3rem;
+  padding-bottom: 4.5rem;
   display: flex;
   justify-content: space-between;
 }
 #product-page .product-container .items .highlights .coffee {
   text-align: center;
-  position: relative;
   height: auto;
   width: 100%;
   height: auto;
+  position: relative;
 }
 #product-page .product-container .items .highlights .coffee img {
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 80%;
 }
 #product-page .product-container .items .highlights .coffee h3 {
   position: absolute;
-  right: 10%;
-  bottom: 3px;
+  right: 38px;
+  bottom: 0;
   font-size: 2rem;
   letter-spacing: 1px;
   color: #000000;
@@ -404,7 +404,7 @@
   width: 45%;
 }
 #review-page .ratings-container .rates .card-section .cards {
-  background-color: #fff;
+  background-color: #252525;
   padding: 18px;
   border-radius: 12px;
   width: 100%;
@@ -417,23 +417,16 @@
   height: auto;
 }
 #review-page .ratings-container .rates .card-section .cards .profile img {
-  height: 80px;
-  width: 5rem;
+  height: 100%;
+  width: 15%;
   border-radius: 50%;
 }
-#review-page .ratings-container .rates .card-section .cards .profile .einstein {
-  width: 6.3rem;
-}
-#review-page .ratings-container .rates .card-section .cards .profile .galileo {
-  width: 7.5rem;
-}
 #review-page .ratings-container .rates .card-section .cards .profile .description {
-  color: #000;
+  color: #fff;
   width: auto;
 }
 #review-page .ratings-container .rates .card-section .cards .profile .description p {
   width: auto;
-  color: #000;
   font-size: 1rem;
   padding-top: 5px;
 }
@@ -527,14 +520,14 @@
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .header {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     padding: 0 35px;
     height: 80px;
     position: fixed;
-    width: 500px;
+    width: 100%;
   }
   .header a h1 {
     font-size: 1.5rem;
@@ -640,7 +633,8 @@
   }
   #product-page .product-container .items .highlights .coffee h3 {
     font-size: 1.5rem;
-    right: 75px;
+    right: -5px;
+    width: 100%;
   }
   #product-page .product-container .items button {
     font-size: 0.8rem;
@@ -683,14 +677,9 @@
   #review-page .ratings-container .rates .card-section .cards .profile {
     height: 100%;
   }
-  #review-page .ratings-container .rates .card-section .cards .profile .newton {
-    width: 100px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile .einstein {
-    width: 110px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile .galileo {
-    width: 140px;
+  #review-page .ratings-container .rates .card-section .cards .profile img {
+    height: 100%;
+    width: 75px;
   }
   #review-page .ratings-container .rates .card-section .cards .profile .description h3 {
     font-size: 1rem;

@@ -321,6 +321,7 @@ $heading-weight: 700;
                 color: $subtitle;
             }
         }
+        
         .items {
             display: flex;
             flex-direction: column;
@@ -331,26 +332,26 @@ $heading-weight: 700;
 
             .highlights { 
                width: 100%;
-               padding-bottom: 3rem;
+               padding-bottom: 4.5rem;
                display: flex;
                justify-content: space-between;
 
                 .coffee {
                     text-align: center;
-                    position: relative;
                     height: auto;
                     width: 100%;
                     height: auto;
+                    position: relative;
+                
                     img {
-                      height: 300px;
-                      width: 300px;
-                      
+                      height: 100%;
+                      width: 80%;
                     }
 
                     h3 {
                         position: absolute;
-                        right: 10%;
-                        bottom: 3px;
+                        right: 38px;
+                        bottom: 0;
                         font-size: 2rem;
                         letter-spacing: 1px;
                         color: #000000;
@@ -423,7 +424,7 @@ $heading-weight: 700;
                 gap: 18px;
                 width: 45%;
                 .cards {
-                    background-color: #fff;
+                    background-color: #252525;
                     padding: 18px;
                     border-radius: 12px;
                     width: 100%;
@@ -435,22 +436,15 @@ $heading-weight: 700;
                         height: auto;
     
                         img {
-                            height: 80px;
-                            width: 5rem;
+                            height: 100%;
+                            width: 15%;
                             border-radius: 50%;
                         }
-                        .einstein {
-                            width: 6.3rem;
-                        }
-                        .galileo {
-                            width: 7.5rem;
-                        }
                         .description {
-                            color: #000;
+                            color: #fff;
                             width: auto;
                             p {
                                 width: auto;
-                                color: #000;
                                 font-size: 1rem;
                                 padding-top: 5px;
                             }
@@ -556,14 +550,14 @@ $heading-weight: 700;
 }
 
 // Mobile responsive
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 
     .header {
         backdrop-filter: blur(10px);
         padding: 0 35px;
         height: 80px;
         position: fixed;
-        width: 500px;
+        width: 100%;
 
         a {
             h1 {
@@ -656,6 +650,7 @@ $heading-weight: 700;
                     font-size: .8rem;
                 }
             }
+            
             .items {
                 flex-direction: column;
                 padding-top: 0;
@@ -672,7 +667,8 @@ $heading-weight: 700;
                         }
                         h3 {
                             font-size: 1.5rem;
-                            right: 75px;
+                            right: -5px;
+                            width: 100%;
                         }
                     }
                 }
@@ -716,14 +712,9 @@ $heading-weight: 700;
                         height: 100px;
                         .profile {
                             height: 100%;
-                            .newton {
-                                width: 100px;
-                            }
-                            .einstein {
-                                width: 110px;
-                            }
-                            .galileo {
-                                width: 140px;
+                            img {
+                                height: 100%;
+                                width: 75px;
                             }
                             .description {
                                 h3 {
