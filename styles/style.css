@@ -499,6 +499,10 @@
   resize: none;
   background-color: #fff;
   padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  height: 300px;
+  width: 500px;
 }
 #contact-page .contact-container .contact-content .feedback textarea:focus {
   outline: none;
@@ -512,6 +516,64 @@
   border: none;
   padding: 0.5rem 2rem;
   cursor: pointer;
+}
+#contact-page .card-result {
+  visibility: hidden;
+  background-color: #6F4E38;
+  height: 280px;
+  width: 450px;
+  padding: 10px 15px;
+  left: 430px;
+  top: 0;
+  transform: scale(0.1);
+  transition: transform 0.3s, top 0.3s;
+  z-index: 1;
+  position: fixed;
+  border-radius: 10px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#contact-page .card-result .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact-page .card-result .section h3 {
+  font-size: 1.5rem;
+}
+#contact-page .card-result .section #close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+#contact-page .card-result .result-section {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+#contact-page .card-result .result-section #result {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#contact-page .card-result button {
+  width: 30%;
+  color: #000;
+  padding: 8px 10px;
+  cursor: pointer;
+  background-color: #fafafa;
+  border: 0;
+  font-weight: bold;
+}
+#contact-page .card-opened {
+  visibility: visible;
+  top: 30%;
+  transform: scale(1);
 }
 
 #footer-page {
@@ -558,11 +620,10 @@
   }
   #landing-page {
     padding: 80px 35px 50px 35px;
-    height: 500px;
+    height: 100vh;
     display: flex;
   }
   #landing-page .landing {
-    /* padding-top: 10%; */
     align-items: center;
     height: auto;
   }
@@ -592,24 +653,26 @@
   #about-page .information {
     height: auto;
     flex-direction: column;
-    gap: 0;
+    gap: 30px;
   }
   #about-page .information .about {
     width: auto;
-    height: 300px;
+    height: auto;
   }
   #about-page .information .about h2 {
     font-size: 2rem;
     margin-bottom: 65px;
     width: 200px;
-    height: 5px;
+    height: 0;
+    transform: translateY(0);
   }
   #about-page .information .about p {
     font-size: 1rem;
+    height: 100%;
   }
   #about-page .information img {
     width: 100%;
-    height: 100%;
+    height: 280px;
     box-shadow: 5px 5px 10px black;
   }
   #product-page {
@@ -641,8 +704,8 @@
     gap: 1rem;
   }
   #product-page .product-container .items .highlights .coffee img {
-    height: 250px;
-    width: 65%;
+    height: 200px;
+    width: 230px;
     box-shadow: 5px 5px 10px black;
   }
   #product-page .product-container .items .highlights .coffee h3 {
@@ -747,12 +810,19 @@
   #contact-page .contact-container .contact-content .feedback textarea {
     width: 100%;
     height: 200px;
+    font-size: 18px;
   }
   #contact-page .contact-container .contact-content .feedback button {
     font-size: 0.8rem;
     height: auto;
     width: auto;
     padding: 0.8rem;
+  }
+  #contact-page .card-result {
+    top: 28%;
+    left: 25%;
+    height: 200px;
+    width: 350px;
   }
   #footer-page {
     padding: 50px 35px;
@@ -767,5 +837,188 @@
     align-items: center;
     gap: 3px;
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .header {
+    width: 100%;
+    padding: 20px;
+  }
+  #landing-page {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 20px;
+  }
+  #landing-page .landing .title {
+    transform: translateY(10%);
+  }
+  #landing-page .landing .title h1 {
+    font-size: 2.3rem;
+  }
+  #landing-page .landing .title p {
+    font-size: 0.8rem;
+  }
+  #landing-page .sidebar-mobile {
+    width: 45%;
+  }
+  #landing-page .sidebar-mobile .wrapper ul li a {
+    font-size: 1rem;
+  }
+  #about-page {
+    height: auto;
+    padding: 30px 20px;
+  }
+  #about-page .information {
+    height: auto;
+    gap: 20px;
+  }
+  #about-page .information .about {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #about-page .information .about h2 {
+    font-size: 2rem;
+    transform: translateY(0);
+    height: 0;
+    width: auto;
+  }
+  #about-page .information .about p {
+    font-size: 1rem;
+    height: 100%;
+  }
+  #about-page .information img {
+    width: 100%;
+    height: 200px;
+  }
+  #product-page {
+    padding: 30px 20px;
+    height: auto;
+  }
+  #product-page .product-container {
+    height: 100%;
+    gap: 30px;
+  }
+  #product-page .product-container .second-title {
+    transform: translateY(0);
+    width: 100%;
+    height: auto;
+  }
+  #product-page .product-container .second-title h2 {
+    margin: 0;
+  }
+  #product-page .product-container .second-title p {
+    font-size: 0.8rem;
+  }
+  #product-page .product-container .items {
+    height: 100%;
+    gap: 45px;
+  }
+  #product-page .product-container .items .highlights {
+    height: 100%;
+    gap: 18px;
+  }
+  #product-page .product-container .items .highlights .coffee {
+    height: auto;
+    width: 100%;
+  }
+  #product-page .product-container .items .highlights .coffee img {
+    height: 150px;
+    width: 200px;
+  }
+  #product-page .product-container .items .highlights .coffee h3 {
+    font-size: 1.3rem;
+  }
+  #product-page .product-container .items button {
+    padding: 0.5rem 0.8rem;
+  }
+  #review-page {
+    padding: 30px 20px;
+    height: 100vh;
+  }
+  #review-page .ratings-container .rates .card-section {
+    gap: 15px;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile {
+    width: auto;
+    gap: 18px;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile img {
+    height: 100%;
+    width: 70px;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile .description {
+    height: auto;
+    width: 100%;
+  }
+  #contact-page {
+    padding: 30px 20px;
+    height: auto;
+  }
+  #contact-page .contact-container .contact-content {
+    padding: 0 20px;
+  }
+  #contact-page .contact-container .contact-content .socials {
+    gap: 20px;
+  }
+  #contact-page .contact-container .contact-content .socials .social-section p {
+    width: 100%;
+  }
+  #contact-page .contact-container .contact-content .feedback p {
+    font-size: 1rem;
+  }
+  #contact-page .contact-container .contact-content .feedback textarea {
+    height: 150px;
+    font-size: 13.8px;
+  }
+  #contact-page .contact-container .contact-content .feedback button {
+    padding: 0.5rem 0.8rem;
+  }
+  #contact-page .card-result {
+    top: 28%;
+    left: 18%;
+    height: 200px;
+    width: 250px;
+  }
+  #contact-page .card-result .section h3 {
+    font-size: 1rem;
+  }
+  #contact-page .card-result .result-section .result {
+    font-size: 1rem;
+  }
+  #contact-page .card-result button {
+    width: 30%;
+    padding: 5px;
+  }
+  #footer-page {
+    padding: 20px;
+    height: auto;
+  }
+  #footer-page .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #footer-page .footer-container h3 {
+    font-size: 1rem;
+  }
+  #footer-page .footer-container p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contact-page .card-result {
+    left: 21%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #contact-page .card-result {
+    left: 15%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #contact-page .card-result {
+    left: 15%;
   }
 }/*# sourceMappingURL=style.css.map */

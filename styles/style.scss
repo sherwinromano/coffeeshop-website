@@ -479,6 +479,7 @@ $heading-weight: 700;
         flex-direction: column;
         gap: 12px;
         height: 100%;
+        
         h2 {
             font-size: $heading-size;
             font-weight: $heading-weight;
@@ -520,6 +521,10 @@ $heading-weight: 700;
                     resize: none;
                     background-color: #fff;
                     padding: 10px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    height: 300px;
+                    width: 500px;
                 }
                 textarea:focus {
                     outline: none;
@@ -537,6 +542,64 @@ $heading-weight: 700;
                 }
             }
         }
+    }
+    .card-result {
+        visibility: hidden;
+        background-color: $coffee-color;
+        height: 280px;
+        width: 450px;
+        padding: 10px 15px;
+        left: 430px;
+        top: 0;
+        transform: scale(0.1);
+        transition: transform 0.3s, top 0.3s;
+        z-index: 1;
+        position: fixed;
+        border-radius: 10px;
+        box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3 {
+                font-size: 1.5rem;
+            }
+            #close {
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+        .result-section {
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            #result {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        button {
+            width: 30%;
+            color: #000;
+            padding: 8px 10px;
+            cursor: pointer;
+            background-color: #fafafa;
+            border: 0;
+            font-weight: bold;
+        }
+    }
+    .card-opened {
+        visibility: visible;
+        top: 30%; 
+        transform: scale(1); 
     }
 }
 
@@ -560,254 +623,5 @@ $heading-weight: 700;
     }
 }
 
-// Mobile responsive
-@media only screen and (max-width: 700px) {
-
-    .header {
-        backdrop-filter: blur(10px);
-        padding: 0 35px;
-        height: 80px;
-        position: fixed;
-        width: 100%;
-
-        a {
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
-        ul li {
-            display: none;
-        }
-        button {
-            display: none;
-        }
-        .fa-bars {
-            display: block;
-            font-size: 1.5rem;
-        }
-    }
-    #landing-page {
-        padding: 80px 35px 50px 35px;
-        height: 500px;
-        display: flex;
-        .landing {
-            /* padding-top: 10%; */
-            align-items: center;
-            height: auto;
-            .title {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                transform: translateY(25%);
-                h1 {
-                    text-align: center;
-                    font-size: 3rem;
-                    margin-bottom: 1rem;
-                }
-                p {
-                    text-align: center;
-                    font-size: .8rem;
-                    width: 60%;
-                }
-            }
-            img {
-                display: none;
-            }
-        }
-    }
-    #about-page {
-        height: auto;
-        padding: 50px 35px;
-
-        .information {
-            height: auto;
-            flex-direction: column;
-            gap: 0;
-            
-            .about {
-                width: auto;
-                height: 300px;
-                h2 {
-                    font-size: 2rem;
-                    margin-bottom: 65px;
-                    width: 200px;
-                    height: 5px;
-                    
-                }
-                p {
-                    font-size: 1rem;
-                }
-            }
-            img {
-                width: 100%;
-                height: 100%;
-                box-shadow: 5px 5px 10px black;
-            }
-        }
-    }
-    #product-page {
-        padding: 50px 35px;
-        height: auto;
-        .product-container {
-            height: auto;
-            gap: 3rem;
-            .second-title {
-                width: 50%;
-                h2 {
-                    font-size: 2rem;
-                    margin-bottom: 0;
-                }
-                p {
-                    font-size: .8rem;
-                }
-            }
-            
-            .items {
-                flex-direction: column;
-                padding-top: 0;
-                gap: 3rem;
-                .highlights {
-                    flex-direction: column;
-                    padding-bottom: 0;
-                    gap: 1rem;
-                    .coffee {
-                        img {
-                            height: 250px;
-                            width: 65%;
-                            box-shadow: 5px 5px 10px black;
-                        }
-                        h3 {
-                            font-size: 1.5rem;
-                            right: -5px;
-                            width: 100%;
-                        }
-                    }
-                }
-                button {
-                    font-size: .8rem;
-                    height: auto;
-                    width: auto;
-                    padding: .8rem;
-                    transition: none;
-                    
-                }
-            }
-        }
-
-    }
-    #product-page::after {
-        display: none;
-    }
-    #review-page {
-        padding: 50px 35px;
-        height: auto;
-        .ratings-container {
-            height: auto;
-            width: 100%;
-            h2 {
-                font-size: 2rem;
-                width: 100%;
-                margin-bottom: 5px;
-            }
-            .rates {
-                flex-direction: column;
-                height: auto;
-                gap: 3rem;
-                width: 100%;
-                .note {
-                    align-self: flex-start;
-                    width: 65%;
-                    font-size: .8rem;
-                    font-style: normal;
-                }
-                .card-section {
-                    width: 100%;
-                    .cards {
-                        height: 100px;
-                        .profile {
-                            height: 100%;
-                            img {
-                                height: 100%;
-                                width: 75px;
-                            }
-                            .description {
-                                h3 {
-                                    font-size: 1rem;
-                                }
-                                p {
-                                    font-size: .8rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #contact-page {
-        padding: 50px 35px;
-        height: auto;
-        .contact-container {
-            height: auto;
-            gap: 1rem;
-            align-items: center;
-            h2 {
-                align-self: flex-start;
-                font-size: 2rem;
-            }
-            .contact-content {
-                flex-direction: column;
-                width: 100%;
-                gap: 1rem;
-                .socials {
-                    gap: 1rem;
-                    width: 100%;
-                    .social-section {
-                        font-size: 1rem;
-                        align-items: center;
-                        .logo {
-                            font-size: 1.3rem;
-                        }
-                        p {
-                            font-size: 1rem;
-                        }
-                    }
-                }
-                .feedback {
-                    width: 100%;
-                    gap: 1rem;
-                    p {
-                        padding-top: 1.3rem;
-                        font-size: 1.3rem;
-                    }
-                    textarea {
-                        width: 100%;
-                        height: 200px;
-                    }
-                    button {
-                        font-size: .8rem;
-                        height: auto;
-                        width: auto;
-                        padding: .8rem;
-                    }
-                }
-            }
-        }
-    }
-    #footer-page {
-        padding: 50px 35px;
-        height: auto;
-        .footer-container {
-            h3 {
-                font-size: 1rem;
-            }
-            p {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 3px;
-                font-size: .8rem;
-            }
-        }
-    }
-}
+// Responsiveness
+@import "responsive";

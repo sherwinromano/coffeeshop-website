@@ -10,12 +10,14 @@ document.querySelector(".closeBtn").addEventListener('click', () => {
     sidebar.style.transform = "translateX(500px)";
 });
 
-document.getElementById("order").addEventListener("click", function(){
-    alert("Coming soon :)");
+document.querySelector("#order").addEventListener("click", function(){
+    alert("This page is not available yet");
 });
 
-document.getElementById("submit-feedback").addEventListener("click", function(){
-    let feedback = document.getElementById("feedback");
+
+
+document.querySelector("#submit-feedback").addEventListener("click", function(){
+    /* let feedback = document.getElementById("feedback");
 
     if(feedback.value === "") {
         alert("Please input a feedback");
@@ -24,8 +26,28 @@ document.getElementById("submit-feedback").addEventListener("click", function(){
         alert(`Your feedback: ${feedback.value}`);
         feedback.value = "";
         feedback.focus();
+    } */
+    let feedback = document.querySelector("#feedback");
+    let card = document.querySelector(".card-result");
+    let feed = document.querySelector("#result");
+    
+    if(feedback.value === "") {
+        alert("Please input some feedback");
+    } else {
+        card.classList.add("card-opened");
+        feed.append(feedback.value);
+        // Close pop-up function
+        document.querySelector("#close").addEventListener("click", function(){
+            card.classList.remove("card-opened");
+            feed.innerText = "";
+            feedback.value = "";
+        });
     }
 });
+
+
+
+
 
 // Mobile responsive
 
@@ -38,14 +60,14 @@ for(let i = 0; i < links.length; i++) {
     });
 }
 
-document.getElementById("title").addEventListener("click", function(){
+document.querySelector("#title").addEventListener("click", function(){
     sidenav.style.transform = "translateX(100%)";
 });
 
-document.getElementById("hamburger").addEventListener("click", function(){
+document.querySelector("#hamburger").addEventListener("click", function(){
     sidenav.style.transform = "translateX(0)";
 });
 
-document.getElementById("toggle-close").addEventListener("click", function(){
+document.querySelector("#toggle-close").addEventListener("click", function(){
     sidenav.style.transform = "translateX(100%)";
 });

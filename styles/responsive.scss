@@ -1,0 +1,474 @@
+@media only screen and (max-width: 700px) {
+
+    .header {
+        backdrop-filter: blur(10px);
+        padding: 0 35px;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+
+        a {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+        ul li {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        .fa-bars {
+            display: block;
+            font-size: 1.5rem;
+        }
+    }
+    #landing-page {
+        padding: 80px 35px 50px 35px;
+        height: 100vh;
+        display: flex;
+        .landing {
+            align-items: center;
+            height: auto;
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transform: translateY(25%);
+                h1 {
+                    text-align: center;
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    text-align: center;
+                    font-size: .8rem;
+                    width: 60%;
+                }
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+    #about-page {
+        height: auto;
+        padding: 50px 35px;
+
+        .information {
+            height: auto;
+            flex-direction: column;
+            gap: 30px;
+            .about {
+                width: auto;
+                height: auto;
+                h2 {
+                    font-size: 2rem;
+                    margin-bottom: 65px;
+                    width: 200px;
+                    height: 0;
+                    transform: translateY(0);
+                }
+                p {
+                    font-size: 1rem;
+                    height: 100%;
+                }
+            }
+            img {
+                width: 100%;
+                height: 280px;
+                box-shadow: 5px 5px 10px black;
+            }
+        }
+    }
+    #product-page {
+        padding: 50px 35px;
+        height: auto;
+
+        .product-container {
+            height: auto;
+            gap: 3rem;
+            .second-title {
+                width: 50%;
+                h2 {
+                    font-size: 2rem;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: .8rem;
+                }
+            }
+            
+            .items {
+                flex-direction: column;
+                padding-top: 0;
+                gap: 3rem;
+                .highlights {
+                    flex-direction: column;
+                    padding-bottom: 0;
+                    gap: 1rem;
+                    .coffee {
+                        img {
+                            height: 200px;
+                            width: 230px;
+                            box-shadow: 5px 5px 10px black;
+                        }
+                        h3 {
+                            font-size: 1.5rem;
+                            right: -5px;
+                            width: 100%;
+                        }
+                    }
+                }
+                button {
+                    font-size: .8rem;
+                    height: auto;
+                    width: auto;
+                    padding: .8rem;
+                    transition: none;
+                    
+                }
+            }
+        }
+
+    }
+    #product-page::after {
+        display: none;
+    }
+    #review-page {
+        padding: 50px 35px;
+        height: auto;
+        .ratings-container {
+            height: auto;
+            width: 100%;
+            h2 {
+                font-size: 2rem;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .rates {
+                flex-direction: column;
+                height: auto;
+                gap: 3rem;
+                width: 100%;
+                .note {
+                    align-self: flex-start;
+                    width: 65%;
+                    font-size: .8rem;
+                    font-style: normal;
+                }
+                .card-section {
+                    width: 100%;
+                    .cards {
+                        height: 100px;
+                        .profile {
+                            height: 100%;
+                            img {
+                                height: 100%;
+                                width: 75px;
+                            }
+                            .description {
+                                h3 {
+                                    font-size: 1rem;
+                                }
+                                p {
+                                    font-size: .8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact-page {
+        padding: 50px 35px;
+        height: auto;
+        .contact-container {
+            height: auto;
+            gap: 1rem;
+            align-items: center;
+            h2 {
+                align-self: flex-start;
+                font-size: 2rem;
+            }
+            .contact-content {
+                flex-direction: column;
+                width: 100%;
+                gap: 1rem;
+                .socials {
+                    gap: 1rem;
+                    width: 100%;
+                    .social-section {
+                        font-size: 1rem;
+                        align-items: center;
+                        .logo {
+                            font-size: 1.3rem;
+                        }
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .feedback {
+                    width: 100%;
+                    gap: 1rem;
+                    p {
+                        padding-top: 1.3rem;
+                        font-size: 1.3rem;
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 200px;
+                        font-size: 18px;
+                    }
+                    button {
+                        font-size: .8rem;
+                        height: auto;
+                        width: auto;
+                        padding: .8rem;
+                    }
+                }
+            }
+        }
+        .card-result {
+            top: 28%;
+            left: 25%;
+            height: 200px;
+            width: 350px;
+        }
+    }
+    #footer-page {
+        padding: 50px 35px;
+        height: auto;
+        .footer-container {
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header {
+        width: 100%;
+        padding: 20px;
+    }
+    #landing-page { 
+        height: 100vh;
+        width: 100%;
+        padding: 30px 20px;
+        .landing {
+            .title {
+                transform: translateY(10%);
+                h1 {
+                    font-size: 2.3rem;
+                }
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+        .sidebar-mobile {
+            width: 45%;
+            .wrapper {
+                ul li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    #about-page {
+        height: auto;
+        padding: 30px 20px;
+        .information {
+            height: auto;
+            gap: 20px;
+            .about {
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                h2 {
+                    font-size: 2rem;
+                    transform: translateY(0);
+                    height: 0;
+                    width: auto;
+                }
+                p {
+                    font-size: 1rem;
+                    height: 100%;
+                }
+            }
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+    #product-page {
+        padding: 30px 20px;
+        height: auto;
+        .product-container {
+            height: 100%;
+            gap: 30px;
+            .second-title {
+                transform: translateY(0);
+                width: 100%;
+                height: auto;
+                h2 {
+                    margin: 0;
+                }
+                p {
+                    font-size: .8rem;
+                }
+            }
+            .items {
+                height: 100%;
+                gap: 45px;
+                .highlights {
+                    height: 100%;
+                    gap: 18px;
+                    .coffee {
+                        height: auto;
+                        width: 100%;
+                        img {
+                            height: 150px;
+                            width: 200px;
+                        }
+                        h3 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                button {
+                    padding: .5rem .8rem;
+                }
+            }
+        }
+    }
+    #review-page {
+        padding: 30px 20px;
+        height: 100vh;
+        .ratings-container {
+            .rates {
+                .card-section {
+                    gap: 15px;
+                    .cards {
+                        .profile {
+                            width: auto;
+                            gap: 18px;
+                            img {
+                                height: 100%;
+                                width: 70px;
+                            }
+                            .description {
+                                height: auto;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact-page {
+        padding: 30px 20px;
+        height: auto;
+        .contact-container {
+            .contact-content {
+                padding: 0 20px;
+                .socials {
+                    gap: 20px;
+                    .social-section {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+                .feedback {
+                    p {
+                        font-size: 1rem;
+                    }
+                    textarea {
+                        height: 150px;
+                        font-size: 13.8px;
+                    }
+                    button {
+                        padding: .5rem .8rem;
+                    }
+                }
+            }
+        }
+        .card-result {
+            top: 28%;
+            left: 18%;
+            height: 200px;
+            width: 250px;
+            .section {
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+            .result-section {
+                .result {
+                    font-size: 1rem;
+                }
+            }
+            button {
+                width: 30%;
+                padding: 5px;
+            }
+        }
+    }
+    #footer-page {
+        padding: 20px;
+        height: auto;
+        .footer-container {
+            flex-direction: column;
+            align-items: flex-start;
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+// Pop-up responsiveness
+@media only screen and (max-width: 600px) {
+    #contact-page {
+        .card-result {
+            left: 21%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #contact-page {
+        .card-result {
+            left: 15%;
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #contact-page {
+        .card-result {
+            left: 15%;
+        }
+    }
+}
+
