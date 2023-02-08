@@ -256,6 +256,134 @@
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .header {
+        padding: 0 30px;
+    }
+    #landing-page {
+        height: 100vh;
+        padding: 30px 25px;
+        .landing {
+            .title {
+                h1 {
+                    font-size: 3rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #about-page {
+        height: auto;
+        padding: 30px 25px;
+        .information {
+            gap: 25px;
+            .about {
+                height: auto;
+                h2 {
+                    transform: translateY(0);
+                    height: 0;
+                }
+            }
+            img {
+                height: 200px;
+            }
+        }
+    }
+    #product-page {
+        height: auto;
+        padding: 30px 25px;
+        .product-container {
+            height: 100%;
+            gap: 25px;
+            .items {
+                gap: 40px;
+                .highlights {
+                    .coffee {
+                        height: auto;
+                        width: 100%;
+                        img {
+                            height: 180px;
+                            width: 180px;
+                        }
+                        h3 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #review-page {
+        padding: 30px 25px;
+        height: 100vh;
+        .ratings-container {
+            .rates {
+                gap: 35px;
+                .card-section {
+                    gap: 20px;
+                    .cards {
+                        .profile {
+                            width: auto;
+                            gap: 20px;
+                            img {
+                                height: 100%;
+                                width: 70px;
+                            }
+                            .description {
+                                height: auto;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    #contact-page {
+        padding: 30px 25px;
+        height: auto;
+        .contact-container {
+            .contact-content {
+                .feedback {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                    textarea {
+                        height: 180px;
+                        font-size: 14px;
+                    }
+                    button {
+                        padding: .8rem 1rem;
+                    }
+                }
+            }
+        }
+        .card-result {
+            height: 200px;
+        }
+        .card-opened {
+            top: 40%;
+            right: 40%;
+            transform: translate(-20%, -20%);
+        }
+    }
+    #footer-page {
+        padding: 30px 25px;
+        height: auto;
+        .footer-container {
+            flex-direction: column;
+            align-items: flex-start;
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 380px) {
     .header {
         width: 100%;
@@ -327,6 +455,7 @@
                 width: 100%;
                 height: auto;
                 h2 {
+                    width: 100%;
                     margin: 0;
                 }
                 p {
@@ -361,6 +490,7 @@
         padding: 30px 20px;
         height: 100vh;
         .ratings-container {
+            gap: 30px;
             .rates {
                 .card-section {
                     gap: 15px;
@@ -430,6 +560,11 @@
                 padding: 5px;
             }
         }
+        .card-opened {
+            top: 30%;
+            right: 30%;
+            transform: translate(-5%, -5%);
+        }
     }
     #footer-page {
         padding: 20px;
@@ -446,29 +581,3 @@
         }
     }
 }
-
-// Pop-up responsiveness
-@media only screen and (max-width: 600px) {
-    #contact-page {
-        .card-result {
-            left: 21%;
-        }
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #contact-page {
-        .card-result {
-            left: 15%;
-        }
-    }
-}
-
-@media only screen and (max-width: 370px) {
-    #contact-page {
-        .card-result {
-            left: 15%;
-        }
-    }
-}
-

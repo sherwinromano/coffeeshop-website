@@ -20,7 +20,7 @@ $heading-weight: 700;
     height: 15%;
     backdrop-filter: blur(10px);
     width: 100%;
-    z-index: 100;
+    z-index: 3;
     padding: 3% 8%;
 
     a {
@@ -521,7 +521,7 @@ $heading-weight: 700;
                     resize: none;
                     background-color: #fff;
                     padding: 10px;
-                    font-weight: bold;
+                    font-weight: 600;
                     font-size: 20px;
                     height: 300px;
                     width: 500px;
@@ -549,11 +549,11 @@ $heading-weight: 700;
         height: 280px;
         width: 450px;
         padding: 10px 15px;
-        left: 430px;
+        left: 0;
         top: 0;
         transform: scale(0.1);
         transition: transform 0.3s, top 0.3s;
-        z-index: 1;
+        z-index: 10;
         position: fixed;
         border-radius: 10px;
         box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
@@ -598,8 +598,22 @@ $heading-weight: 700;
     }
     .card-opened {
         visibility: visible;
-        top: 30%; 
-        transform: scale(1); 
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%) scale(1); 
+    }
+    #overlay {
+        position: fixed;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    #overlay.active {
+        opacity: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 

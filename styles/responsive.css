@@ -241,6 +241,116 @@
     font-size: 0.8rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .header {
+    padding: 0 30px;
+  }
+  #landing-page {
+    height: 100vh;
+    padding: 30px 25px;
+  }
+  #landing-page .landing .title h1 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  #about-page {
+    height: auto;
+    padding: 30px 25px;
+  }
+  #about-page .information {
+    gap: 25px;
+  }
+  #about-page .information .about {
+    height: auto;
+  }
+  #about-page .information .about h2 {
+    transform: translateY(0);
+    height: 0;
+  }
+  #about-page .information img {
+    height: 200px;
+  }
+  #product-page {
+    height: auto;
+    padding: 30px 25px;
+  }
+  #product-page .product-container {
+    height: 100%;
+    gap: 25px;
+  }
+  #product-page .product-container .items {
+    gap: 40px;
+  }
+  #product-page .product-container .items .highlights .coffee {
+    height: auto;
+    width: 100%;
+  }
+  #product-page .product-container .items .highlights .coffee img {
+    height: 180px;
+    width: 180px;
+  }
+  #product-page .product-container .items .highlights .coffee h3 {
+    font-size: 1.3rem;
+  }
+  #review-page {
+    padding: 30px 25px;
+    height: 100vh;
+  }
+  #review-page .ratings-container .rates {
+    gap: 35px;
+  }
+  #review-page .ratings-container .rates .card-section {
+    gap: 20px;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile {
+    width: auto;
+    gap: 20px;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile img {
+    height: 100%;
+    width: 70px;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile .description {
+    height: auto;
+    width: 100%;
+  }
+  #contact-page {
+    padding: 30px 25px;
+    height: auto;
+  }
+  #contact-page .contact-container .contact-content .feedback p {
+    font-size: 1.2rem;
+  }
+  #contact-page .contact-container .contact-content .feedback textarea {
+    height: 180px;
+    font-size: 14px;
+  }
+  #contact-page .contact-container .contact-content .feedback button {
+    padding: 0.8rem 1rem;
+  }
+  #contact-page .card-result {
+    height: 200px;
+  }
+  #contact-page .card-opened {
+    top: 40%;
+    right: 40%;
+    transform: translate(-20%, -20%);
+  }
+  #footer-page {
+    padding: 30px 25px;
+    height: auto;
+  }
+  #footer-page .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #footer-page .footer-container h3 {
+    font-size: 1rem;
+  }
+  #footer-page .footer-container p {
+    font-size: 10px;
+  }
+}
 @media only screen and (max-width: 380px) {
   .header {
     width: 100%;
@@ -309,6 +419,7 @@
     height: auto;
   }
   #product-page .product-container .second-title h2 {
+    width: 100%;
     margin: 0;
   }
   #product-page .product-container .second-title p {
@@ -339,6 +450,9 @@
   #review-page {
     padding: 30px 20px;
     height: 100vh;
+  }
+  #review-page .ratings-container {
+    gap: 30px;
   }
   #review-page .ratings-container .rates .card-section {
     gap: 15px;
@@ -394,6 +508,11 @@
     width: 30%;
     padding: 5px;
   }
+  #contact-page .card-opened {
+    top: 30%;
+    right: 30%;
+    transform: translate(-5%, -5%);
+  }
   #footer-page {
     padding: 20px;
     height: auto;
@@ -407,20 +526,5 @@
   }
   #footer-page .footer-container p {
     font-size: 10px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #contact-page .card-result {
-    left: 21%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #contact-page .card-result {
-    left: 15%;
-  }
-}
-@media only screen and (max-width: 370px) {
-  #contact-page .card-result {
-    left: 15%;
   }
 }/*# sourceMappingURL=responsive.css.map */
