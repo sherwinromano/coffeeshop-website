@@ -96,125 +96,12 @@
   width: 50%;
   font-size: 1rem;
 }
-#landing-page .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #252525;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  height: 100%;
-  width: 25%;
-  z-index: 500;
-  opacity: 0.9;
-  padding: 4rem 2rem;
-  transition: all 0.3s ease-in-out;
-  transform: translateX(500px);
-}
-#landing-page .sidebar .content {
-  color: #fff;
-  width: 100%;
-}
-#landing-page .sidebar .content .fa-solid {
-  color: white;
-  font-size: 2rem;
-  transform: translateY(-10%);
-  cursor: pointer;
-}
-#landing-page .sidebar .content .fa-solid:hover {
-  transform: scale(1.5);
-}
-#landing-page .sidebar .content form {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#landing-page .sidebar .content form label {
-  font-size: 18px;
-  margin-bottom: 2px;
-}
-#landing-page .sidebar .content form input[type=text], #landing-page .sidebar .content form [type=password] {
-  margin-bottom: 18px;
-  padding: 0.5rem;
-}
-#landing-page .sidebar .content form input[type=text], #landing-page .sidebar .content form [type=password]:focus {
-  outline: none;
-}
-#landing-page .sidebar .content form button {
-  background-color: #6F4E38;
-  border: none;
-  padding: 0.5rem 2rem;
-  cursor: pointer;
-  height: 10%;
-  width: 45%;
-  align-self: center;
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-}
-#landing-page .sidebar .content form button:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-#landing-page .sidebar .content .note {
-  font-size: 1rem;
-  margin-top: 22px;
-  text-align: center;
-}
-#landing-page .sidebar .content .note a {
-  color: #00FF38;
-  text-decoration: none;
-}
-#landing-page .sidebar .content .socials {
-  margin-top: 5rem;
-}
-#landing-page .sidebar .content .socials .google {
-  font-size: 1rem;
-  background-color: white;
-  width: 100%;
-  border: none;
-  color: #000;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  padding: 0.8rem 0;
-  border-radius: 32px;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-#landing-page .sidebar .content .socials .google:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-}
-#landing-page .sidebar .content .socials .facebook {
-  background-color: #3B5998;
-  font-size: 1rem;
-  width: 100%;
-  border: none;
-  color: #fff;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.8rem 0;
-  border-radius: 32px;
-  gap: 18px;
-  cursor: pointer;
-}
-#landing-page .sidebar .content .socials .facebook:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease-in-out;
-}
 #landing-page .sidebar-mobile {
   position: fixed;
   z-index: 111;
   top: 0;
   right: 0;
   height: 100%;
-  width: 35%;
   padding: 25px 15px 10px 15px;
   background-color: rgba(0, 0, 0, 0.75);
   transition: all 0.3s ease-in-out;
@@ -225,7 +112,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  position: relative;
 }
 #landing-page .sidebar-mobile .wrapper .fa-solid {
   transform: translateY(1.8px);
@@ -252,6 +138,9 @@
   font-size: 13px;
   font-style: italic;
   color: rgba(255, 255, 255, 0.38);
+}
+#landing-page .active {
+  transform: translateX(0);
 }
 
 #about-page {
@@ -313,33 +202,32 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 3rem;
-  height: 100%;
+  gap: 1rem;
+  height: auto;
   z-index: 1;
 }
 #product-page .product-container .items .highlights {
+  height: 100%;
   width: 100%;
-  padding-bottom: 4.5rem;
   display: flex;
   justify-content: space-between;
 }
 #product-page .product-container .items .highlights .coffee {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   width: 100%;
-  height: auto;
-  position: relative;
+  gap: 1rem;
 }
 #product-page .product-container .items .highlights .coffee img {
-  height: 100%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
 }
 #product-page .product-container .items .highlights .coffee h3 {
-  position: absolute;
-  right: 38px;
-  bottom: 0;
   font-size: 2rem;
   letter-spacing: 1px;
-  color: #000000;
+  color: #fcfcfc;
 }
 #product-page .product-container .items .highlights .coffee:hover {
   transform: scale(1.1);
@@ -376,7 +264,7 @@
   width: 50%;
   background-color: #282828;
   right: 0;
-  top: 18%;
+  top: 15%;
   border-radius: 10% 0 0 10%;
 }
 
@@ -497,6 +385,7 @@
 }
 #contact-page .contact-container .contact-content .feedback textarea {
   resize: none;
+  border: 0;
   background-color: #fff;
   padding: 10px;
   font-weight: 600;
@@ -593,7 +482,7 @@
 #footer-page {
   background-color: #000;
   color: white;
-  height: 25vh;
+  height: 15vh;
   padding: 4% 8%;
 }
 #footer-page .footer-container {
@@ -610,14 +499,12 @@
   font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .header {
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    padding: 0 35px;
     height: 80px;
-    position: fixed;
     width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .header a h1 {
     font-size: 1.5rem;
@@ -625,518 +512,242 @@
   .header ul li {
     display: none;
   }
-  .header button {
-    display: none;
-  }
   .header .fa-bars {
     display: block;
     font-size: 1.5rem;
   }
   #landing-page {
-    padding: 80px 35px 50px 35px;
     height: 100vh;
-    display: flex;
+    width: 100%;
+    padding: 0 5%;
   }
   #landing-page .landing {
-    align-items: center;
-    height: auto;
+    height: 100%;
+    width: 100%;
   }
   #landing-page .landing .title {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    transform: translateY(25%);
+    text-align: center;
   }
   #landing-page .landing .title h1 {
-    text-align: center;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
+    width: 80%;
   }
   #landing-page .landing .title p {
-    text-align: center;
-    font-size: 0.8rem;
-    width: 60%;
+    font-size: 1rem;
   }
   #landing-page .landing img {
     display: none;
   }
+  #landing-page .sidebar-mobile {
+    width: 45%;
+  }
   #about-page {
     height: auto;
-    padding: 50px 35px;
+    width: 100%;
+    padding: 8% 5%;
   }
   #about-page .information {
     height: auto;
+    width: 100%;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.5rem;
   }
   #about-page .information .about {
-    width: auto;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   #about-page .information .about h2 {
-    font-size: 2rem;
-    margin-bottom: 65px;
-    width: 200px;
-    height: 0;
+    font-size: 2.5rem;
     transform: translateY(0);
   }
   #about-page .information .about p {
     font-size: 1rem;
-    height: 100%;
   }
   #about-page .information img {
     width: 100%;
-    height: 280px;
-    box-shadow: 5px 5px 10px black;
+    height: 200px;
   }
   #product-page {
-    padding: 50px 35px;
     height: auto;
+    width: 100%;
+    padding: 8% 5%;
   }
   #product-page .product-container {
-    height: auto;
-    gap: 3rem;
+    height: 100%;
+    width: 100%;
+    gap: 1.5rem;
   }
   #product-page .product-container .second-title {
-    width: 50%;
+    width: 100%;
+    transform: translateX(0);
   }
   #product-page .product-container .second-title h2 {
-    font-size: 2rem;
-    margin-bottom: 0;
+    font-size: 2.5rem;
+    margin: 0;
   }
   #product-page .product-container .second-title p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   #product-page .product-container .items {
-    flex-direction: column;
     padding-top: 0;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 1.5rem;
   }
   #product-page .product-container .items .highlights {
     flex-direction: column;
     padding-bottom: 0;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+  #product-page .product-container .items .highlights .coffee {
+    height: 100%;
+    width: 100%;
+    align-items: center;
   }
   #product-page .product-container .items .highlights .coffee img {
-    height: 200px;
-    width: 230px;
-    box-shadow: 5px 5px 10px black;
+    width: 50%;
+    height: 180px;
   }
   #product-page .product-container .items .highlights .coffee h3 {
+    width: auto;
     font-size: 1.5rem;
-    right: -5px;
-    width: 100%;
   }
   #product-page .product-container .items button {
-    font-size: 0.8rem;
-    height: auto;
-    width: auto;
-    padding: 0.8rem;
-    transition: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    font-size: 13px;
   }
   #product-page::after {
     display: none;
   }
   #review-page {
-    padding: 50px 35px;
     height: auto;
+    width: 100%;
+    padding: 8% 5%;
   }
   #review-page .ratings-container {
-    height: auto;
-    width: 100%;
+    height: 100%;
+    gap: 1rem;
   }
   #review-page .ratings-container h2 {
-    font-size: 2rem;
     width: 100%;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
   }
   #review-page .ratings-container .rates {
     flex-direction: column;
-    height: auto;
-    gap: 3rem;
-    width: 100%;
+    height: 100%;
+    gap: 1rem;
   }
   #review-page .ratings-container .rates .note {
-    align-self: flex-start;
-    width: 65%;
-    font-size: 0.8rem;
+    width: 100%;
     font-style: normal;
+    font-size: 1rem;
   }
   #review-page .ratings-container .rates .card-section {
     width: 100%;
-  }
-  #review-page .ratings-container .rates .card-section .cards {
-    height: 100px;
+    gap: 1rem;
   }
   #review-page .ratings-container .rates .card-section .cards .profile {
+    gap: 30px;
+    width: 100%;
     height: 100%;
   }
-  #review-page .ratings-container .rates .card-section .cards .profile img {
+  #review-page .ratings-container .rates .card-section .cards .profile .description {
+    width: 100%;
     height: 100%;
-    width: 75px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile .description h3 {
-    font-size: 1rem;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile .description p {
-    font-size: 0.8rem;
   }
   #contact-page {
-    padding: 50px 35px;
     height: auto;
+    width: 100%;
+    padding: 8% 5%;
   }
   #contact-page .contact-container {
-    height: auto;
+    height: 100%;
     gap: 1rem;
-    align-items: center;
   }
   #contact-page .contact-container h2 {
-    align-self: flex-start;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   #contact-page .contact-container .contact-content {
     flex-direction: column;
+    height: 100%;
     width: 100%;
-    gap: 1rem;
+    padding: 0;
+    gap: 1.5rem;
   }
   #contact-page .contact-container .contact-content .socials {
-    gap: 1rem;
     width: 100%;
+    padding-left: 1.5rem;
+    gap: 2rem;
   }
   #contact-page .contact-container .contact-content .socials .social-section {
-    font-size: 1rem;
+    gap: 1rem;
     align-items: center;
   }
   #contact-page .contact-container .contact-content .socials .social-section .logo {
-    font-size: 1.3rem;
+    font-size: 20px;
+    width: auto;
   }
   #contact-page .contact-container .contact-content .socials .social-section p {
     font-size: 1rem;
+    width: 100%;
+    padding-left: 1rem;
   }
   #contact-page .contact-container .contact-content .feedback {
     width: 100%;
-    gap: 1rem;
-  }
-  #contact-page .contact-container .contact-content .feedback p {
-    padding-top: 1.3rem;
-    font-size: 1.3rem;
-  }
-  #contact-page .contact-container .contact-content .feedback textarea {
-    width: 100%;
-    height: 200px;
-    font-size: 18px;
-  }
-  #contact-page .contact-container .contact-content .feedback button {
-    font-size: 0.8rem;
-    height: auto;
-    width: auto;
-    padding: 0.8rem;
-  }
-  #contact-page .card-result {
-    top: 28%;
-    left: 25%;
-    height: 200px;
-    width: 350px;
-  }
-  #footer-page {
-    padding: 50px 35px;
-    height: auto;
-  }
-  #footer-page .footer-container h3 {
-    font-size: 1rem;
-  }
-  #footer-page .footer-container p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .header {
-    padding: 0 30px;
-  }
-  #landing-page {
-    height: 100vh;
-    padding: 30px 25px;
-  }
-  #landing-page .landing .title h1 {
-    font-size: 3rem;
-    width: 100%;
-  }
-  #about-page {
-    height: auto;
-    padding: 30px 25px;
-  }
-  #about-page .information {
-    gap: 25px;
-  }
-  #about-page .information .about {
-    height: auto;
-  }
-  #about-page .information .about h2 {
-    transform: translateY(0);
-    height: 0;
-  }
-  #about-page .information img {
-    height: 200px;
-  }
-  #product-page {
-    height: auto;
-    padding: 30px 25px;
-  }
-  #product-page .product-container {
-    height: 100%;
-    gap: 25px;
-  }
-  #product-page .product-container .items {
-    gap: 40px;
-  }
-  #product-page .product-container .items .highlights .coffee {
-    height: auto;
-    width: 100%;
-  }
-  #product-page .product-container .items .highlights .coffee img {
-    height: 180px;
-    width: 180px;
-  }
-  #product-page .product-container .items .highlights .coffee h3 {
-    font-size: 1.3rem;
-  }
-  #review-page {
-    padding: 30px 25px;
-    height: 100vh;
-  }
-  #review-page .ratings-container .rates {
-    gap: 35px;
-  }
-  #review-page .ratings-container .rates .card-section {
-    gap: 20px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile {
-    width: auto;
-    gap: 20px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile img {
-    height: 100%;
-    width: 70px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile .description {
-    height: auto;
-    width: 100%;
-  }
-  #contact-page {
-    padding: 30px 25px;
-    height: auto;
-  }
-  #contact-page .contact-container .contact-content .feedback p {
-    font-size: 1.2rem;
-  }
-  #contact-page .contact-container .contact-content .feedback textarea {
-    height: 180px;
-    font-size: 14px;
-  }
-  #contact-page .contact-container .contact-content .feedback button {
-    padding: 0.8rem 1rem;
-  }
-  #contact-page .card-result {
-    height: 200px;
-  }
-  #contact-page .card-opened {
-    top: 40%;
-    right: 40%;
-    transform: translate(-20%, -20%);
-  }
-  #footer-page {
-    padding: 30px 25px;
-    height: auto;
-  }
-  #footer-page .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #footer-page .footer-container h3 {
-    font-size: 1rem;
-  }
-  #footer-page .footer-container p {
-    font-size: 10px;
-  }
-}
-@media only screen and (max-width: 380px) {
-  .header {
-    width: 100%;
-    padding: 20px;
-  }
-  #landing-page {
-    height: 100vh;
-    width: 100%;
-    padding: 30px 20px;
-  }
-  #landing-page .landing .title {
-    transform: translateY(10%);
-  }
-  #landing-page .landing .title h1 {
-    font-size: 2.3rem;
-  }
-  #landing-page .landing .title p {
-    font-size: 0.8rem;
-  }
-  #landing-page .sidebar-mobile {
-    width: 45%;
-  }
-  #landing-page .sidebar-mobile .wrapper ul li a {
-    font-size: 1rem;
-  }
-  #about-page {
-    height: auto;
-    padding: 30px 20px;
-  }
-  #about-page .information {
-    height: auto;
-    gap: 20px;
-  }
-  #about-page .information .about {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  #about-page .information .about h2 {
-    font-size: 2rem;
-    transform: translateY(0);
-    height: 0;
-    width: auto;
-  }
-  #about-page .information .about p {
-    font-size: 1rem;
-    height: 100%;
-  }
-  #about-page .information img {
-    width: 100%;
-    height: 200px;
-  }
-  #product-page {
-    padding: 30px 20px;
-    height: auto;
-  }
-  #product-page .product-container {
-    height: 100%;
-    gap: 30px;
-  }
-  #product-page .product-container .second-title {
-    transform: translateY(0);
-    width: 100%;
-    height: auto;
-  }
-  #product-page .product-container .second-title h2 {
-    width: 100%;
-    margin: 0;
-  }
-  #product-page .product-container .second-title p {
-    font-size: 0.8rem;
-  }
-  #product-page .product-container .items {
-    height: 100%;
-    gap: 45px;
-  }
-  #product-page .product-container .items .highlights {
-    height: 100%;
-    gap: 18px;
-  }
-  #product-page .product-container .items .highlights .coffee {
-    height: auto;
-    width: 100%;
-  }
-  #product-page .product-container .items .highlights .coffee img {
-    height: 150px;
-    width: 200px;
-  }
-  #product-page .product-container .items .highlights .coffee h3 {
-    font-size: 1.3rem;
-  }
-  #product-page .product-container .items button {
-    padding: 0.5rem 0.8rem;
-  }
-  #review-page {
-    padding: 30px 20px;
-    height: 100vh;
-  }
-  #review-page .ratings-container {
-    gap: 30px;
-  }
-  #review-page .ratings-container .rates .card-section {
-    gap: 15px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile {
-    width: auto;
-    gap: 18px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile img {
-    height: 100%;
-    width: 70px;
-  }
-  #review-page .ratings-container .rates .card-section .cards .profile .description {
-    height: auto;
-    width: 100%;
-  }
-  #contact-page {
-    padding: 30px 20px;
-    height: auto;
-  }
-  #contact-page .contact-container .contact-content {
-    padding: 0 20px;
-  }
-  #contact-page .contact-container .contact-content .socials {
-    gap: 20px;
-  }
-  #contact-page .contact-container .contact-content .socials .social-section p {
-    width: 100%;
   }
   #contact-page .contact-container .contact-content .feedback p {
     font-size: 1rem;
   }
   #contact-page .contact-container .contact-content .feedback textarea {
-    height: 150px;
-    font-size: 13.8px;
+    height: 200px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
   }
   #contact-page .contact-container .contact-content .feedback button {
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 1rem;
+    font-size: 13px;
   }
   #contact-page .card-result {
-    top: 28%;
-    left: 18%;
-    height: 200px;
-    width: 250px;
+    height: 30%;
+    width: 80%;
+    padding: 10px;
+    gap: 8px;
+  }
+  #contact-page .card-result .section {
+    width: auto;
+    text-align: center;
   }
   #contact-page .card-result .section h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
-  #contact-page .card-result .result-section .result {
-    font-size: 1rem;
-  }
-  #contact-page .card-result button {
-    width: 30%;
-    padding: 5px;
-  }
-  #contact-page .card-opened {
-    top: 30%;
-    right: 30%;
-    transform: translate(-5%, -5%);
+  #contact-page .card-result .result-section {
+    padding: 8px;
   }
   #footer-page {
-    padding: 20px;
     height: auto;
+    width: 100%;
+    padding: 5%;
   }
   #footer-page .footer-container {
+    height: 100%;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
   }
   #footer-page .footer-container h3 {
     font-size: 1rem;
   }
   #footer-page .footer-container p {
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 }/*# sourceMappingURL=style.css.map */

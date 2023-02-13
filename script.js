@@ -1,22 +1,10 @@
-const sidebar = document.querySelector(".sidebar");
-
-document.querySelector(".loginBtn").addEventListener('click', () => {
-    let email = document.getElementById("email");
-    sidebar.style.transform = "translateX(0)";
-    email.focus();
-});
-
-document.querySelector(".closeBtn").addEventListener('click', () => {
-    sidebar.style.transform = "translateX(500px)";
-});
-
-document.querySelector("#order").addEventListener("click", function(){
+document.querySelector("#order").addEventListener("click", () => {
     alert("This page is not available yet");
 });
 
 
 
-document.querySelector("#submit-feedback").addEventListener("click", function(){
+document.querySelector("#submit-feedback").addEventListener("click", () => {
     let feedback = document.querySelector("#feedback");
     let card = document.querySelector(".card-result");
     let feed = document.querySelector("#result");
@@ -29,7 +17,7 @@ document.querySelector("#submit-feedback").addEventListener("click", function(){
         overlay.classList.add("active");
         feed.append(feedback.value);
         // Close pop-up function
-        document.querySelector("#close").addEventListener("click", function(){
+        document.querySelector("#close").addEventListener("click", () => {
             card.classList.remove("card-opened");
             overlay.classList.remove("active");
             feed.innerText = "";
@@ -39,28 +27,25 @@ document.querySelector("#submit-feedback").addEventListener("click", function(){
 });
 
 
-
-
-
 // Mobile responsive
 
 let sidenav = document.querySelector(".sidebar-mobile");
 let links = document.querySelectorAll(".link");
 
 for(let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function(){
-        sidenav.style.transform = "translateX(100%)";
+    links[i].addEventListener("click", () => {
+        sidenav.classList.remove("active");
     });
 }
 
-document.querySelector("#title").addEventListener("click", function(){
-    sidenav.style.transform = "translateX(100%)";
+document.querySelector("#title").addEventListener("click", () => {
+    sidenav.classList.remove("active");
 });
 
-document.querySelector("#hamburger").addEventListener("click", function(){
-    sidenav.style.transform = "translateX(0)";
-});
-
-document.querySelector("#toggle-close").addEventListener("click", function(){
-    sidenav.style.transform = "translateX(100%)";
+document.querySelector("#hamburger").addEventListener("click", () => {
+    sidenav.classList.add("active");
+    // Toggle close sidebar
+    document.querySelector("#toggle-close").addEventListener("click", () => {
+        sidenav.classList.remove("active");
+    });
 });
