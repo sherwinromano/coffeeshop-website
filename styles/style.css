@@ -68,6 +68,7 @@
   transition: 0.3s;
 }
 .header .fa-bars {
+  color: #fff;
   display: none;
 }
 
