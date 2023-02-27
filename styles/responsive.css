@@ -1,9 +1,343 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header {
+    height: 15%;
+    width: 100%;
+    padding: 0 7%;
+  }
+  .header a h1 {
+    font-size: 30px;
+  }
+  .header ul li {
+    font-size: 17px;
+    margin: 0 9px;
+  }
+  .header li:last-child {
+    margin-right: 0;
+  }
+  #landing-page {
+    height: 100vh;
+    width: 100%;
+    padding: 0 7%;
+  }
+  #landing-page .landing {
+    gap: 50px;
+  }
+  #landing-page .landing .title h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+  #landing-page .landing .title p {
+    width: 100%;
+    font-size: 18px;
+  }
+  #landing-page .landing img {
+    height: 480px;
+    width: 480px;
+  }
+  #about-page {
+    height: auto;
+    width: 100%;
+    padding: 7%;
+  }
+  #about-page .information {
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+  }
+  #about-page .information .about {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #about-page .information .about h2 {
+    font-size: 2.8rem;
+    transform: translateY(0);
+  }
+  #about-page .information .about p {
+    font-size: 1rem;
+  }
+  #about-page .information img {
+    width: 50%;
+  }
+  #product-page {
+    height: auto;
+    width: 100%;
+    padding: 7%;
+  }
+  #product-page .product-container {
+    height: 100%;
+    width: 100%;
+  }
+  #product-page .product-container .second-title h2 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+  }
+  #product-page .product-container .second-title p {
+    font-size: 1rem;
+  }
+  #product-page .product-container .items {
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+  }
+  #product-page .product-container .items .highlights {
+    gap: 1rem;
+  }
+  #product-page .product-container .items .highlights .coffee img {
+    width: 85%;
+  }
+  #product-page .product-container .items .highlights .coffee h3 {
+    font-size: 1.8rem;
+  }
+  #product-page .product-container .items button {
+    padding: 10px 18px;
+  }
+  #product-page::after {
+    display: none;
+  }
+  #review-page {
+    height: auto;
+    width: 100%;
+    padding: 7%;
+  }
+  #review-page .ratings-container {
+    gap: 1rem;
+  }
+  #review-page .ratings-container h2 {
+    font-size: 2.8rem;
+  }
+  #review-page .ratings-container .rates .note {
+    font-size: 1.5rem;
+    width: 30%;
+    font-style: normal;
+  }
+  #review-page .ratings-container .rates .card-section {
+    width: 50%;
+  }
+  #contact-page {
+    height: auto;
+    width: 100%;
+    padding: 7%;
+  }
+  #contact-page .contact-container h2 {
+    font-size: 2.8rem;
+  }
+  #contact-page .contact-container .contact-content {
+    padding: 0;
+    gap: 2rem;
+  }
+  #contact-page .contact-container .contact-content .socials .social-section p {
+    font-size: 1rem;
+  }
+  #contact-page .contact-container .contact-content .feedback p {
+    font-style: normal;
+    font-size: 1.3rem;
+  }
+  #contact-page .contact-container .contact-content .feedback textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+  #contact-page .contact-container .contact-content .feedback button {
+    padding: 10px 18px;
+  }
+  #footer-page {
+    height: auto;
+    width: 100%;
+    padding: 5% 7%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .header {
+    height: 15%;
+    width: 100%;
+    padding: 0 5%;
+  }
+  .header a h1 {
+    font-size: 30px;
+  }
+  .header ul li {
+    font-size: 15px;
+    margin: 0 8px;
+  }
+  .header ul li:last-child {
+    margin-right: 0;
+  }
+  #landing-page {
+    height: 100vh;
+    width: 100%;
+    padding: 0 5%;
+  }
+  #landing-page .landing {
+    gap: 30px;
+    transform: translateY(5%);
+  }
+  #landing-page .landing .title h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  #landing-page .landing .title p {
+    width: 80%;
+    font-size: 15px;
+  }
+  #landing-page .landing img {
+    height: 400px;
+    width: 400px;
+  }
+  #about-page {
+    height: auto;
+    width: 100%;
+    padding: 5%;
+  }
+  #about-page .information {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #about-page .information .about {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #about-page .information .about h2 {
+    font-size: 2.3rem;
+    transform: translateY(0);
+  }
+  #about-page .information .about p {
+    font-size: 1rem;
+  }
+  #about-page .information img {
+    width: 500px;
+  }
+  #product-page {
+    height: auto;
+    width: 100%;
+    padding: 5%;
+  }
+  #product-page .product-container {
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+  }
+  #product-page .product-container .second-title h2 {
+    font-size: 2.3rem;
+    margin: 0;
+  }
+  #product-page .product-container .items {
+    height: 100%;
+    width: 100%;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+  #product-page .product-container .items .highlights {
+    gap: 1rem;
+  }
+  #product-page .product-container .items .highlights .coffee {
+    gap: 1rem;
+  }
+  #product-page .product-container .items .highlights .coffee img {
+    width: 80%;
+  }
+  #product-page .product-container .items .highlights .coffee h3 {
+    font-size: 1.5rem;
+  }
+  #product-page .product-container .items button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  #product-page::after {
+    display: none;
+  }
+  #review-page {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+  }
+  #review-page .ratings-container {
+    gap: 1rem;
+  }
+  #review-page .ratings-container h2 {
+    font-size: 2.3rem;
+  }
+  #review-page .ratings-container .rates {
+    flex-direction: column;
+  }
+  #review-page .ratings-container .rates .note {
+    font-size: 1rem;
+    width: 50%;
+    align-self: start;
+    font-style: normal;
+  }
+  #review-page .ratings-container .rates .card-section {
+    width: 100%;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile {
+    width: 100%;
+  }
+  #review-page .ratings-container .rates .card-section .cards .profile img {
+    height: 50px;
+    width: 50px;
+  }
+  #contact-page {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+  }
+  #contact-page .contact-container {
+    gap: 1rem;
+  }
+  #contact-page .contact-container h2 {
+    font-size: 2.3rem;
+  }
+  #contact-page .contact-container .contact-content {
+    padding: 0;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  #contact-page .contact-container .contact-content .socials {
+    width: 100%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #contact-page .contact-container .contact-content .socials .social-section {
+    gap: 1.5rem;
+    align-items: center;
+  }
+  #contact-page .contact-container .contact-content .socials .social-section p {
+    font-size: 1rem;
+  }
+  #contact-page .contact-container .contact-content .feedback {
+    height: 50%;
+    width: 100%;
+  }
+  #contact-page .contact-container .contact-content .feedback p {
+    font-size: 1rem;
+    font-style: normal;
+  }
+  #contact-page .contact-container .contact-content .feedback textarea {
+    height: 250px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  #contact-page .contact-container .contact-content .feedback button {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  #footer-page {
+    padding: 5%;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 600px) {
   .header {
-    height: 80px;
+    height: 13%;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
   }
   .header a h1 {
     font-size: 1.5rem;
@@ -120,8 +454,7 @@
     font-size: 1.5rem;
   }
   #product-page .product-container .items button {
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
+    padding: 8px 15px;
     font-size: 13px;
   }
   #product-page::after {
@@ -205,6 +538,7 @@
   }
   #contact-page .contact-container .contact-content .feedback p {
     font-size: 1rem;
+    font-style: normal;
   }
   #contact-page .contact-container .contact-content .feedback textarea {
     height: 200px;
@@ -213,7 +547,7 @@
     font-size: 1rem;
   }
   #contact-page .contact-container .contact-content .feedback button {
-    padding: 0.5rem 1rem;
+    padding: 8px 15px;
     font-size: 13px;
   }
   #contact-page .card-result {

@@ -1,10 +1,373 @@
-// Mobile
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .header {
+        height: 15%;
+        width: 100%;
+        padding: 0 7%;
+        a {
+            h1 {
+                font-size: 30px;
+            }
+        }
+        ul li {
+            font-size: 17px;
+            margin: 0 9px;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+    #landing-page {
+        height: 100vh;
+        width: 100%;
+        padding: 0 7%;
+        .landing {
+            gap: 50px;
+            .title {
+                h1 {
+                    width: 100%;
+                    font-size: 3rem;
+                }
+                p {
+                    width: 100%;
+                    font-size: 18px;
+                }
+            }
+            img {
+                height: 480px;
+                width: 480px;
+            }
+        }
+    }
+    #about-page {
+        height: auto;
+        width: 100%;
+        padding: 7%;
+        .information {
+            height: 100%;
+            width: 100%;
+            gap: 3rem;
+            .about {
+                height: auto;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                h2 {
+                    font-size: 2.8rem;
+                    transform: translateY(0);
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            img {
+                width: 50%;
+            }
+        }
+    }
+    #product-page {
+        height: auto;
+        width: 100%;
+        padding: 7%;
+        .product-container {
+            height: 100%;
+            width: 100%;
+            .second-title {
+                h2 {
+                    font-size: 2.8rem;
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .items {
+                gap: 1.5rem;
+                padding-top: 2.5rem;
+                .highlights {
+                    gap: 1rem;
+                    .coffee {
+                        img {
+                            width: 85%;
+                        }
+                        h3 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                button {
+                    padding: 10px 18px;
+                }
+            }
+        }
+    }
+    #product-page::after {
+        display: none;
+    }
+    #review-page {
+        height: auto;
+        width: 100%;
+        padding: 7%;
+        .ratings-container {
+            gap: 1rem;
+            h2 {
+                font-size: 2.8rem;
+            }
+            .rates {
+                .note {
+                    font-size: 1.5rem;
+                    width: 30%;
+                    font-style: normal;
+                }
+                .card-section {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    #contact-page {
+        height: auto;
+        width: 100%;
+        padding: 7%;
+        .contact-container {
+            h2 {
+                font-size: 2.8rem;
+            }
+            .contact-content {
+                padding: 0;
+                gap: 2rem;
+                .socials {
+                    .social-section {
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .feedback {
+                    p {
+                        font-style: normal;
+                        font-size: 1.3rem;
+                    }
+                    textarea {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                    button {
+                        padding: 10px 18px;
+                    }
+                }
+            }
+        }
+    }
+    #footer-page {
+        height: auto;
+        width: 100%;
+        padding: 5% 7%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .header {
+        height: 15%;
+        width: 100%;
+        padding: 0 5%;
+        a {
+            h1 {
+                font-size: 30px;
+            }
+        }
+        ul {
+            li {
+                font-size: 15px;
+                margin: 0 8px;
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    #landing-page {
+        height: 100vh;
+        width: 100%;
+        padding: 0 5%;
+        .landing {
+            gap: 30px;
+            transform: translateY(5%);
+            .title {
+                h1 {
+                    width: 100%;
+                    font-size: 2.5rem;
+                }
+                p {
+                    width: 80%;
+                    font-size: 15px;
+                }
+            }
+            img {
+                height: 400px;
+                width: 400px;
+            }
+        }
+    }
+    #about-page {
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        .information {
+            height: auto;
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+            .about {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                h2 {
+                    font-size: 2.3rem;
+                    transform: translateY(0);
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            img {
+                width: 500px;
+            }
+        }
+    }
+    #product-page {
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        .product-container {
+            height: 100%;
+            width: 100%;
+            gap: 2rem;
+            .second-title {
+                h2 {
+                    font-size: 2.3rem;
+                    margin: 0;
+                }
+            }
+            .items {
+                height: 100%;
+                width: 100%;
+                gap: 1.5rem;
+                padding-top: 1rem;
+                .highlights {
+                    gap: 1rem;
+                    .coffee {
+                        gap: 1rem;
+                        img {
+                            width: 80%;
+                        }
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                button {
+                    padding: 10px 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    #product-page::after{
+        display: none;
+    }
+    #review-page {
+        padding: 5%;
+        height: auto;
+        width: 100%;
+        .ratings-container {
+            gap: 1rem;
+            h2 {
+                font-size: 2.3rem;
+            }
+            .rates {
+                flex-direction: column;
+                .note {
+                    font-size: 1rem;
+                    width: 50%;
+                    align-self: start;
+                    font-style: normal;
+                }
+                .card-section {
+                    width: 100%;
+                    .cards {
+                        .profile {
+                            width: 100%;
+                            img {
+                                height: 50px;
+                                width: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact-page {
+        padding: 5%;
+        height: auto;
+        width: 100%;
+        .contact-container {
+            gap: 1rem;
+            h2 {
+                font-size: 2.3rem;
+            }
+            .contact-content {
+                padding: 0;
+                width: 100%;
+                gap: 1rem;
+                flex-direction: column;
+                .socials {
+                    width: 100%;
+                    display: grid;
+                    gap: 1.5rem;
+                    grid-template-columns: repeat(2, 1fr);
+                    .social-section {
+                        gap: 1.5rem;
+                        align-items: center;
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .feedback {
+                    height: 50%;
+                    width: 100%;
+                    p {
+                        font-size: 1rem;
+                        font-style: normal;
+                    }
+                    textarea {
+                        height: 250px;
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                    button {
+                        padding: 10px 15px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    #footer-page {
+        padding: 5%;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .header {
-        height: 80px;
+        height: 13%;
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 0 5%;
         a {
             h1 {
                 font-size: 1.5rem;
@@ -122,8 +485,7 @@
                     }
                 }
                 button {
-                    text-transform: uppercase;
-                    padding: .5rem 1rem;
+                    padding: 8px 15px;
                     font-size: 13px;
                 }
             }
@@ -208,6 +570,7 @@
                     width: 100%;
                     p {
                         font-size: 1rem;
+                        font-style: normal;
                     }
                     textarea {
                         height: 200px;
@@ -216,7 +579,7 @@
                         font-size: 1rem;
                     }
                     button {
-                        padding: .5rem 1rem;
+                        padding: 8px 15px;
                         font-size: 13px;
                     }
                 }
