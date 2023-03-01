@@ -313,21 +313,38 @@ $heading-weight: 700;
                     padding: 18px;
                     border-radius: 12px;
                     width: 100%;
+                    height: auto;
                     .profile {
                         display: flex;
                         align-items: center;
-                        gap: 20px;
+                        gap: 25px;
                         width: auto;
                         height: auto;
-    
-                        img {
-                            height: 100%;
-                            width: 15%;
+                        .elon-musk {
+                            background: url("../images/musk.jpg") no-repeat;
+                            background-size: cover;
+                            height: 80px;
+                            width: 100px;
+                            border-radius: 50%;
+                        }
+                        .mark-zuckerberg {
+                            background: url("../images/mark.jpg") no-repeat;
+                            background-size: cover;
+                            height: 80px;
+                            width: 100px;
+                            border-radius: 50%;
+                        }
+                        .bill-gates {
+                            background: url("../images/bill.jpg") no-repeat;
+                            background-size: cover;
+                            height: 80px;
+                            width: 100px;
                             border-radius: 50%;
                         }
                         .description {
                             color: #fff;
-                            width: auto;
+                            width: 100%;
+                            height: auto;
                             p {
                                 width: auto;
                                 font-size: 1rem;
